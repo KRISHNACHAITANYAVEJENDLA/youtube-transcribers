@@ -19,7 +19,7 @@ if st.button("Transcribe") and url:
     with st.spinner("⏳ Downloading and transcribing... please wait."):
         try:
             # Set download path
-            output_path = "downloaded_audio"
+            output_path = "downloaded_audio.%(ext)s"
             ydl_opts = {
                 'format': 'bestaudio/best',
                 'outtmpl': output_path,
