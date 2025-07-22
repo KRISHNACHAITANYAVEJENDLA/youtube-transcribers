@@ -4,7 +4,7 @@ from faster_whisper import WhisperModel
 import os
 
 # Initialize model
-model = WhisperModel("medium", device="cpu", compute_type="int8")
+model = WhisperModel("base", device="cpu", compute_type="int8")
 
 # Streamlit UI setup
 st.set_page_config(page_title="YouTube Transcriber", layout="centered")
